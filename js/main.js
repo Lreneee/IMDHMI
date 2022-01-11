@@ -19,7 +19,7 @@ desk2.onmouseleave = () => {
     setTimeout(hidePopup2, 5000);
 }
 
-desk2.onclick = () => {
+desk2.onkeydown = () => {
     console.log("test");
     popup2.setAttribute("visible", "false");
     popup3.setAttribute("visible", "true");
