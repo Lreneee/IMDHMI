@@ -11,6 +11,10 @@ desk1.onmouseleave = () => {
     setTimeout(hidePopup, 5000);
 }
 
+desk1.onmouseclick = () => {
+    setTimeout(hidePopup, 5000);
+}
+
 desk2.onmouseenter = () => {
     setTimeout(showPopup2, 500);
 }
