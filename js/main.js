@@ -8,14 +8,14 @@ desk1.onmouseenter = () => {
     setTimeout(showPopup, 500);
 }
 desk1.onmouseleave = () => {
-    setTimeout(hidePopup, 2000);
+    setTimeout(hidePopup, 5000);
 }
 
 desk2.onmouseenter = () => {
     setTimeout(showPopup2, 500);
 }
 desk2.onmouseleave = () => {
-    setTimeout(hidePopup2, 2000);
+    setTimeout(hidePopup2, 5000);
 }
 
 const showPopup = () => {
