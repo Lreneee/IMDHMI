@@ -7,6 +7,8 @@ const popup3 = document.getElementById("popup3");
 const popup4 = document.getElementById("popup4");
 const popup5 = document.getElementById("popup5");
 
+const pling = new Audio("../pling.wav");
+
 const agenda_tim = document.getElementById("agenda_tim");
 const agenda_werkplek = document.getElementById("agenda_werkplek");
 
@@ -16,6 +18,7 @@ desk1.onmouseenter = () => {
 }
 desk1.onmouseleave = () => {
     setTimeout(hidePopup, 5000);
+    pling.play();
 }
 
 //Agenda Tim inzien
