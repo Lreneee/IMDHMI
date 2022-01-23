@@ -29,7 +29,8 @@
         </a-entity>
 
 
-        <a-sphere id="desk1" position="-6 -1 -3" rotation="0 45 0" radius="0.3"
+        <a-sphere id="desk1" position="-6 -1.5 -3" rotation="0 45 0" radius="0.3"
+                 animation="property: position; to: -6 -1.25 -3; dur: 2000; easing: linear; loop: true; dir: alternate"
                color="#96CEB4"></a-sphere>
         <a-image src="AffinityDesigner/OntwerpReserveerScherm.png" id="popup1" position="-6 2.3 -3" rotation="0 45 0" depth="0.2" height="2" width="5"
                visible="false"></a-image>
@@ -44,12 +45,18 @@
 
 
         <a-sphere id="desk2" position="-6 -2 4.5" rotation="0 45 0" radius="0.3"
+                animation="property: position; to: -6 -1.5 4.5; dur: 2000; easing: linear; loop: true; dir: alternate"
                color="#96CEB4"></a-sphere>
         <a-image src="AffinityDesigner/OntwerpReserveerschermBeschikbaar.png" id="popup2" position="-6 0 4.5" rotation="0 120 0" depth="0.2" height="10" width="6"
                  visible="false"></a-image>
 
         <a-image src="AffinityDesigner/Gereserveerdscreen.png" id="popup3" position="-6 0 4.5" rotation="0 120 0" depth="0.2" height="10" width="6"
                   visible="false"></a-image>
+
+        <a-image src="AffinityDesigner/hogeschool_leiden.png" position="-15 1 -40" rotation="0 30 0" depth="0.2" height="10" width="20"
+                  visible="true"></a-image>
+
+   
 
         <a-sky src="#Sky"></a-sky>
 
