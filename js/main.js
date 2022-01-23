@@ -8,6 +8,7 @@ const popup4 = document.getElementById("popup4");
 const popup5 = document.getElementById("popup5");
 
 const pling = new Audio("../pling.wav");
+const voice1 = new Audio("../werkplekgereserveerd.mp3");
 
 const agenda_tim = document.getElementById("agenda_tim");
 const agenda_werkplek = document.getElementById("agenda_werkplek");
@@ -18,7 +19,7 @@ desk1.onmouseenter = () => {
 }
 desk1.onmouseleave = () => {
     setTimeout(hidePopup, 5000);
-    pling.play();
+    
 }
 
 //Agenda Tim inzien
@@ -26,6 +27,7 @@ agenda_tim.onmouseenter = () => {
     console.log("touched 1")
     setTimeout(showPopup5, 1000);
     setTimeout(hidePopup, 999);
+    
 }
 agenda_tim.onmouseleave = () => {
     setTimeout(hidePopup5, 5000);
@@ -36,6 +38,7 @@ agenda_werkplek.onmouseenter = () => {
     console.log("touched 2")
     setTimeout(showPopup4, 1000);
     setTimeout(hidePopup, 999);
+    
 }
 agenda_werkplek.onmouseleave = () => {
     setTimeout(hidePopup4, 5000);
@@ -82,19 +85,24 @@ const hidePopup2 = () => {
 }
 const showPopup3 = () => {
     popup3.setAttribute("visible", "true");
+     voice1.play();
 }
 const hidePopup3 = () => {
     popup3.setAttribute("visible", "false");
 }
 const showPopup4 = () => {
     popup4.setAttribute("visible", "true");
+    pling.play();
 }
 const hidePopup4 = () => {
     popup4.setAttribute("visible", "false");
+    
 }
 const showPopup5 = () => {
     popup5.setAttribute("visible", "true");
+    pling.play();
 }
 const hidePopup5 = () => {
     popup5.setAttribute("visible", "false");
 }
+
